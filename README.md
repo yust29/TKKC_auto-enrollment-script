@@ -58,13 +58,12 @@ url = 'http://jw.xujc.com/student/index.php?c=Xk&a=List&id=1391'
 
 这是选课列表页的 URL。不同学期 / 不同选课批次的 `id` 参数可能不同，请在浏览器中打开选课页面，复制完整 URL 替换此处。
 
-### 4. cookies
-
+### 4. cookies（第 30-35 行）
 
 1. 用浏览器登录教务系统，进入选课页面
 2. 按 `F12` 打开开发者工具 → 网络 → 随便点个按钮 → 找到index.php?c=Xk&a=List → 请求标头 → cookie
-3.填写main.py中的第 30-35 行
-4.除了PHPSESSID之外的内容仅需修改一次，PHPSESSID会每日刷新，可在脚本启动时弹出的窗口中手动输入
+3. 将复制到的 cookie 内容填写到 `class 1.0.py` 的第 cookies 中
+4. 除了 PHPSESSID 之外的内容仅需修改一次，PHPSESSID 会每日刷新，可在脚本启动时弹出的窗口中手动输入
 
 > ⚠️ PHPSESSID 是登录凭证，请勿泄露给他人。
 
